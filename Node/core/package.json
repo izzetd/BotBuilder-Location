@@ -1,8 +1,8 @@
 {
-  "name": "botbuilder-location",
-  "author": "Microsoft Corp.",
+  "name": "botbuilder-location-german",
+  "author": "Easy Dimi",
   "description": "An open-source location picker control for Microsoft Bot Framework powered by Bing's Maps REST services. This control makes the process of collecting and validating the user's desired location in a conversation easy and reliable.",
-  "version": "2.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "keywords": [
     "botbuilder",
@@ -11,11 +11,11 @@
     "botbuilder-location"
   ],
   "bugs": {
-    "url": "https://github.com/Microsoft/BotBuilder-Location/issues"
+    "url": "https://github.com/izzetd/BotBuilder-Location/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Microsoft/BotBuilder-Location.git"
+    "url": "https://github.com/izzetd/BotBuilder-Location.git"
   },
   "main": "./lib/botbuilder-location.js",
   "dependencies": {

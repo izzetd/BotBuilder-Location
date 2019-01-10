@@ -48,7 +48,7 @@ function createLocationResolveDialog(apiKey: string) {
 
             if (!args.skipDialogPrompt) {
                 var promptSuffix = session.gettext(Strings.TitleSuffix);
-                session.send(args.prompt + promptSuffix).sendBatch();
+                session.send(args.prompt).sendBatch();
             }
         }).onDefault((session) => {
             locationService.getLocationByQuery(apiKey, session.message.text, session.dialogData.locationQueryOptions.countryCode)

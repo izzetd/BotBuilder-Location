@@ -44,7 +44,7 @@ function createLocationResolveDialog(apiKey) {
         };
         if (!args.skipDialogPrompt) {
             var promptSuffix = session.gettext(consts_1.Strings.TitleSuffix);
-            session.send(args.prompt + promptSuffix).sendBatch();
+            session.send(args.prompt).sendBatch();
         }
     }).onDefault(function (session) {
         locationService.getLocationByQuery(apiKey, session.message.text, session.dialogData.locationQueryOptions.countryCode)
