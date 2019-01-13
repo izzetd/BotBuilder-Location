@@ -5,15 +5,15 @@ var consts_1 = require("./consts");
 var place_1 = require("./place");
 function createBaseDialog(options) {
     return new botbuilder_1.IntentDialog(options)
-        .matches(/^cancel$/i, function (session) {
+        .matches(/^abbrechen$/i, function (session) {
         session.send(consts_1.Strings.CancelPrompt);
         session.endDialogWithResult({ response: { cancel: true } });
         return;
     })
-        .matches(/^help$/i, function (session) {
+        .matches(/^hilfe$/i, function (session) {
         session.send(consts_1.Strings.HelpMessage).sendBatch();
     })
-        .matches(/^reset$/i, function (session) {
+        .matches(/^neu eingeben$/i, function (session) {
         session.endDialogWithResult({ response: { reset: true } });
         return;
     });
